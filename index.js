@@ -18,11 +18,11 @@ module.exports = function dateHelper(str, pattern, options) {
 
   // if no args are passed, return a formatted date
   if (str == null && pattern == null) {
-    moment.locale('en');
+    moment.locale('fr');
     return moment().format('MMMM DD, YYYY');
   }
 
-  var defaults = {lang: 'en', date: new Date(str)};
+  var defaults = {lang: 'fr', date: new Date(str)};
   var opts = utils.context(this, defaults, options);
 
   // set the language to use
